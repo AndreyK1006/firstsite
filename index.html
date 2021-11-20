@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+
 </head>
 
 <body>
@@ -55,34 +56,38 @@
     <section class="categories">
         <div class="container">
             <h2 class="hidden">Категории товаров</h2>
-            <div class="categories-list">
-                <ui class="categories-3">
-                    <li class="category">
-                        <img src="img/category-woman.jpg" alt="woman" class="category-img">
-                        <div class="category-text">
-                            <p class="category-sale">30% OFF </p>
-                            <p class="category-txt">FOR WOMEN</p>
-                        </div>
-                    </li>
-                    <li class="category">
-                        <img src="img/category-man.jpg" alt="man" class="category-img">
-                        <div class="category-text">
-                            <p class="category-sale">HOT DEAL</p> <br>
-                            <p class="category-txt">FOR MEN</p>
-                        </div>
-                    </li>
-                    <li class="category">
-                        <img src="img/category-child.jpg" alt="child" class="category-img">
-                        <div class="category-text">
-                            <p class="category-sale">NEW ARRIVALS</p>
-                            <p class="category-txt">FOR KIDS</p>
-                        </div>
-                    </li>
-                </ui>
-                <div>
-                    <img src="img/category-items.jpg" alt="items">
-                    <p class="category-txt">LUXIROUS & TRENDY
-                        ACCESORIES</p>
+            <ui class="categories-list">
+                <li class="category">
+                    <img src="img/category-woman.jpg" alt="woman" class="category-img">
+                    <div class="category-text">
+                        <p class="category-sale">30% OFF</p>
+                        <p class="category-txt">FOR WOMEN</p>
+                    </div>
+                </li>
+                <li class="category">
+                    <img src="img/category-man.jpg" alt="man" class="category-img">
+                    <div class="category-text">
+                        <p class="category-sale">HOT DEAL</p> <br>
+                        <p class="category-txt">FOR MEN</p>
+                    </div>
+                </li>
+                <li class="category">
+                    <img src="img/category-child.jpg" alt="child" class="category-img">
+                    <div class="category-text">
+                        <p class="category-sale">NEW ARRIVALS</p>
+                        <p class="category-txt">FOR KIDS</p>
+                    </div>
+                </li>
+            </ui>
+            <div class="category-items-img">
+                <img src="img/category-items.jpg" alt="items">
+                <div class="category-text2">
+                    <p class="category-sale">
+                        LUXIROUS & TRENDY
+                    </p>
+                    <p class="category-txt">
+                        ACCESORIES
+                    </p>
                 </div>
             </div>
         </div>
@@ -197,7 +202,22 @@
     <section class="feedback">
         <div class="container">
             <h2 class="hidden">Блок обратной связи</h2>
-            feedback
+            <div class="feedback-list">
+                <div class="feedback-left">
+                    <img src="img/feedback-face.png" alt="feedback-face" class="feedback-face">
+                    <p class="feedback-left-text">
+                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i> a pulvinar
+                            purus
+                            condimentum</i>“
+                    </p>
+                </div>
+                <div class="feedback-right">
+                    <h3 class="feedback-subscribe-header">
+                        <div class="feedback-subscribe-header1">SUBSCRIBE</div>
+                        <div class=" feedback-subscribe-header2">FOR OUR NEWLETTER AND PROMOTION</div>
+                    </h3>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -230,9 +250,6 @@
                     </li>
                 </ul>
             </div>
-
-
-
         </div>
     </footer>
 
