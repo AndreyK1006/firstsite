@@ -66,25 +66,41 @@ body {
 }
 
 .promo {
+    position: relative;
     background: #F1E4E6;
     height: 764px;
 }
 
-.promo-title {
-    position: absolute;
-    margin-top: 290px;
-    margin-left: 661px;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
+.offer-wrap {
+    height: 765px;
+    background-image: url(../img/promo-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.promo-title2 {
+.promo-title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 90px;    
+}
+
+.promo-title--small {
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
     color: #222222;
+}
+
+.promo-title--pink {
+    color: #F16D7F;
 }
 
 .promo-bg {
@@ -345,7 +361,7 @@ body {
 	border: none;
 	border-top-left-radius: 22px;
 	border-bottom-left-radius: 22px;
-	color: blue;
+	color: #222224;
 }
 .subscribe-field::placeholder {
 	color: #222224;
@@ -390,5 +406,22 @@ body {
     line-height: 19px;
     color: #FBFBFB;
     margin-top: 32px;
+}
+
+.social-link {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.social-link:hover {
+    background-color: #F16D7F;
+    color: #fff;
 
 }
