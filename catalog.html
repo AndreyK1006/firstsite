@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Catalog page</title>
 
     <link rel="stylesheet" href="style/style.css">
 
@@ -44,59 +44,38 @@
         </div>
     </header>
 
-    <section class="promo">
-        <div class="container offer-wrap">
-            <h1 class="promo-title">
-                THE BRAND <br>
-                <span class="promo-title--small">OF LUXERIOUS <span class="promo-title--pink">FASHION</span></span>
-            </h1>
-        </div>
-    </section>
-
-    <section class=" categories">
-        <div class="container">
-            <h2 class="hidden">Категории товаров</h2>
-            <ul class="categories-list">
-                <li class="category">
-                    <img src="img/category-woman.jpg" alt="woman" class="category-img">
-                    <div class="category-text">
-                        <p class="category-sale">30% OFF</p>
-                        <p class="category-txt">FOR WOMEN</p>
-                    </div>
-                </li>
-                <li class="category">
-                    <img src="img/category-man.jpg" alt="man" class="category-img">
-                    <div class="category-text">
-                        <p class="category-sale">HOT DEAL</p>
-                        <p class="category-txt">FOR MEN</p>
-                    </div>
-                </li>
-                <li class="category">
-                    <img src="img/category-child.jpg" alt="child" class="category-img">
-                    <div class="category-text">
-                        <p class="category-sale">NEW ARRIVALS</p>
-                        <p class="category-txt">FOR KIDS</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="category-items-img">
-                <img src="img/category-items.jpg" alt="items">
-                <div class="category-text2">
-                    <p class="category-sale">
-                        LUXIROUS & TRENDY
-                    </p>
-                    <p class="category-txt">
-                        ACCESORIES
-                    </p>
-                </div>
-            </div>
+    <section class="inner-title">
+        <div class="container inner-title-wrap">
+            <h1 class="page-title">NEW ARRIVALS</h1>
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-item">
+                        <a href="index.html" class="breadcrumbs-link">home</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a href="catalog.html" class="breadcrumbs-link">MEN</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link breadcrumbs-link--current">NEW ARRIVALS </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </section>
 
     <section class="products">
         <div class="container">
-            <h2 class="products-title">Featured Items</h2>
-            <p class="products-discription">Shop for items based on what we featured in this week</p>
+            <section class="filter-box">
+                <div class="filter">
+                    <span class="filter-title">FILTER<img src="img/vector.svg" alt="vector"></span>
+                </div>
+                <div class="sort">
+                    <span class="sort-name">TRENDING NOW</span>
+                    <span class="sort-name">SIZE</span>
+                    <span class="sort-name">PRICE</span>
+                </div>
+            </section>
+
             <ul class="products-list">
                 <li class="product">
                     <img src="img/product-1.jpg" alt="product-1" class="product-img">
@@ -154,9 +133,41 @@
                 </li>
             </ul>
 
-            <div class="center">
-                <a href="catalog.html" class="product-link">Browse All Product</a>
-            </div>
+            <nav class="pagination">
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <button class="pagination-link"><img src="img/arrowleft.png" alt="left"></button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link pagination-link--active">1</button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link">2</button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link">3</button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link">4</button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link">5</button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link">6</button>
+                    </li>
+                    <li class="pagination-item pagination-item--separator">
+                        <span>....</span>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link">20</button>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-link"><img src="img/arrowright.png" alt="right"></button>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
     </section>
 
@@ -262,6 +273,6 @@
     </footer>
 
 </body>
-<!-- ready  lesson3 -->
+
 
 </html>
