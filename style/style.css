@@ -425,3 +425,147 @@ body {
     color: #fff;
 
 }
+
+.inner-title {
+    padding: 60px 0;
+    background-color: #F8F3F4;
+}
+
+.inner-title-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.breadcrumbs {	
+	background-color: #F8F3F4;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.breadcrumbs-item::before {
+  content: '/';
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:first-child::before {
+  display: none;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  transition: 0.2s;
+}
+
+.breadcrumbs-link--current {
+  font-weight: bold;
+  color: #F16D7F;
+}
+
+.breadcrumbs-link[href]:hover {
+  text-decoration: underline;
+  color: #F16D7F;
+}
+
+.filter-box {
+    display: flex;
+    gap: 30px;
+    margin-top: 51px;
+    margin-bottom: 64px;
+}
+
+.filter {
+    width: 360px;    
+}
+
+.filter-title {
+    display: flex;
+    gap: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-left: 15px;    
+}
+
+.sort {
+    display: flex;
+    gap: 20px;
+}
+
+.sort-name {
+    display: flex;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    gap: 10px;
+}
+
+.sort-name::after {
+    content: url(../img/arrow.png) ;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+    margin-top: 46px;
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 23px;	
+	border: 1px solid #C4C4C4;
+	border-radius: 5px;
+	padding: 10px;
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.pagination-item {
+    
+}
+
+.pagination-item--separator {
+	margin: 0 -10px;
+	color: #C4C4C4;
+}
+
+.pagination-link {
+	color: #C4C4C4;
+    text-decoration: none;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.pagination-link--active {
+	color: #EF5B70;
+}
