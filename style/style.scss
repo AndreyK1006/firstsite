@@ -566,3 +566,86 @@ body {
 .pagination-link--active {
 	color: #EF5B70;
 }
+
+.registration {
+    height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.head-registration {    
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+}
+
+.registration-main {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.mainform-registration {
+    display: flex;
+    flex-direction: column;
+    display: block;  
+    // height: 360px;
+}
+
+.registration-perks {
+    margin-left: 128px;
+    
+}
+
+.yourname{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.reg-name{
+    width: 360px;
+    padding: 11px 18px;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+.registration-gender{
+    display: flex;
+    margin: 31px 0;
+    gap: 20px;    
+}
+
+.block-gender {
+    display: block;
+}
+
+.registration-form-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: 15px 0 39px 0;
+}
+
+.form-button {
+    padding: 16px 28px;
+    background-color: $main-color;
+    color: #FFFFFF;
+    border: none;
+    
+}
+
+.registration-perks-font {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 28px;
+    
+}
+
