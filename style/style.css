@@ -744,6 +744,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  color: #222222;
 }
 
 .reg-name {
@@ -765,6 +766,10 @@ body {
 
 .block-gender {
   display: block;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
 }
 
 .registration-form-text {
@@ -788,5 +793,12 @@ body {
   line-height: 29px;
   color: #000000;
   margin-bottom: 28px;
+  list-style: none;
+  content: 'V';
+}
+
+.registration-perks-li::before {
+  content: url(../img/check.png);
+  margin-right: 23px;
 }
 /*# sourceMappingURL=style.css.map */
