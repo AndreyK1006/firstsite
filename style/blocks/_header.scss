@@ -23,17 +23,51 @@
 
 .logo-link {
     margin-right: 40px;
+    @include changecolor;
+
+    &:hover {
+    background-color: purple;
+    transform: rotate(180deg);
+    }
+}
+
+.search-link {
+    display: inline-block;
+    @include changecolor;
+
+    &:hover {
+    background-color: purple;
+    transform: rotate(180deg);
+    }
 }
 
 .cart-link {
     margin-left: 30px;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+        transform: rotate(180deg);
+    }
 }
 
 .menu-button {
     background-color: transparent;
     border: none;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+        transform: rotate(180deg);
+    }
 }
 
 .registry-link {
     margin-left: 30px;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+        transform: rotate(180deg);
+    }
 }

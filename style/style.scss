@@ -6,6 +6,11 @@
 
 $main-color: #F16D7F + 1 - 1;
 
+@mixin changecolor {
+    transition-property: background-color, color;
+    transition-duration: 1s;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -213,6 +218,12 @@ body {
     border: 1px solid #F26376;
     padding: 14px 39px;
     display: inline-block;
+    @include changecolor;
+}
+
+.product-link:hover {
+    background-color: purple;
+    transform: scale(2) translateY(-15px);
 }
 
 // приемущества
@@ -345,6 +356,11 @@ body {
 	border-top-right-radius: 22px;
 	border-bottom-right-radius: 22px;
 	color: #fff;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+    }
 }
 
 
@@ -380,6 +396,15 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.breadcrumbs-item {
+    content: '/';
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+    }
 }
 
 .breadcrumbs-item::before {
@@ -485,6 +510,12 @@ body {
     text-decoration: none;
     border: none;
     background-color: #FFFFFF;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+        color: #fff;
+    }
 }
 
 .pagination-link--active {
@@ -566,7 +597,12 @@ body {
     padding: 16px 28px;
     background-color: $main-color;
     color: #FFFFFF;
-    border: none;    
+    border: none;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+    }    
 }
 
 .registration-perks-font {

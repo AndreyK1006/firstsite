@@ -62,19 +62,73 @@ body {
 
 .logo-link {
   margin-right: 40px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.logo-link:hover {
+  background-color: purple;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.search-link {
+  display: inline-block;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.search-link:hover {
+  background-color: purple;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .cart-link {
   margin-left: 30px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.cart-link:hover {
+  background-color: purple;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .menu-button {
   background-color: transparent;
   border: none;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.menu-button:hover {
+  background-color: purple;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .registry-link {
   margin-left: 30px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.registry-link:hover {
+  background-color: purple;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .promo {
@@ -296,6 +350,16 @@ body {
   border: 1px solid #F26376;
   padding: 14px 39px;
   display: inline-block;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.product-link:hover {
+  background-color: purple;
+  -webkit-transform: scale(2) translateY(-15px);
+          transform: scale(2) translateY(-15px);
 }
 
 .features {
@@ -483,6 +547,14 @@ body {
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
   color: #fff;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.subscribe-btn:hover {
+  background-color: purple;
 }
 
 .footer {
@@ -574,6 +646,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+
+.breadcrumbs-item {
+  content: '/';
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.breadcrumbs-item:hover {
+  background-color: purple;
 }
 
 .breadcrumbs-item::before {
@@ -694,6 +778,15 @@ body {
   text-decoration: none;
   border: none;
   background-color: #FFFFFF;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.pagination-link:hover {
+  background-color: purple;
+  color: #fff;
 }
 
 .pagination-link--active {
@@ -785,6 +878,14 @@ body {
   background-color: #f16d7f;
   color: #FFFFFF;
   border: none;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.form-button:hover {
+  background-color: purple;
 }
 
 .registration-perks-font {
