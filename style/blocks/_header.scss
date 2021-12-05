@@ -1,0 +1,39 @@
+// заголовок
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background: #222222;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    &-left {
+        display: flex;
+        align-items: center;
+        }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        }
+    }
+
+.logo-link {
+    margin-right: 40px;
+}
+
+.cart-link {
+    margin-left: 30px;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+}
+
+.registry-link {
+    margin-left: 30px;
+}

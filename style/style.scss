@@ -4,7 +4,7 @@
     box-sizing: border-box;  
 }
 
-$main-color: #F16D7F;
+$main-color: #F16D7F + 1 - 1;
 
 body {
     font-family: 'Lato', sans-serif;
@@ -27,45 +27,10 @@ body {
     text-align: center;
 }
 
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-}
+// заголовок
+@import "blocks/_header.scss";
 
-.header {
-    background: #222222;
-    color: white;
-    padding-top: 18px;
-    padding-bottom: 18px;
-
-    &-left {
-        display: flex;
-        align-items: center;
-        }
-
-    &-right {
-        display: flex;
-        align-items: center;
-        }
-    }
-
-.logo-link {
-    margin-right: 40px;
-}
-
-.cart-link {
-    margin-left: 30px;
-}
-
-.menu-button {
-    background-color: transparent;
-    border: none;
-}
-
-.registry-link {
-    margin-left: 30px;
-}
-
+// промо
 .promo {
     position: relative;
     background: #F1E4E6;
@@ -109,6 +74,7 @@ body {
     margin-left: -228px;
 }
 
+// категории
 .categories {
     padding-top: 65px;
     padding-bottom: 65px;
@@ -172,15 +138,11 @@ body {
     flex-direction: column;
 }
 
-.features {
-    background-color: #222222;
-    color: white;
-}
-
 .feedback {
     background-color: #eee;
 }
 
+// товары
 .products {
     padding-top: 20px;
     padding-bottom: 95px;
@@ -253,8 +215,11 @@ body {
     display: inline-block;
 }
 
+// приемущества
 .features {
     height: 341px;
+    background-color: #222222;
+    color: white;
 }
 
 .features-list {
@@ -287,27 +252,25 @@ body {
     color: #FBFBFB;
 }
 
-
+// подписка на рассылку
 .feedback {
     background-color: #eee;
     background-image: url("../img/subscribe-bg.jpg");
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 155px;
-}
 
-.feedback-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.feedback-left {
-    text-align: center;
-}
-
-.feedback-face {
-    margin-top: 97px;
-    margin-bottom: 30px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left {
+        text-align: center;
+    }
+    &-face {
+        margin-top: 97px;
+        margin-bottom: 30px;
+    }
 }
 
 .feedback-left-text{
@@ -385,49 +348,8 @@ body {
 }
 
 
-
-.footer {
-    background-color: #222;
-    color: #fff;
-    height: 79px;    
-}
-
-.footer-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-links {
-    list-style: none;
-    display: flex;
-    gap: 8px;
-    margin-top: 22px;
-}
-
-.copyright {
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-    margin-top: 32px;
-}
-
-.social-link {
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
-
-.social-link:hover {
-    background-color: $main-color;
-    color: #fff;
-
-}
+// подвал
+@import "blocks/_footer.scss";
 
 .inner-title {
     padding: 60px 0;

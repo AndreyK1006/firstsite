@@ -105,7 +105,7 @@ body {
   font-size: 48px;
   line-height: 40px;
   color: #222222;
-  border-left: 12px solid #F16D7F;
+  border-left: 12px solid #f16d7f;
   padding-left: 16px;
   margin-right: 90px;
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .promo-title--pink {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .promo-bg {
@@ -195,7 +195,7 @@ body {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .category-text2 {
@@ -215,11 +215,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.features {
-  background-color: #222222;
-  color: white;
 }
 
 .feedback {
@@ -291,7 +286,7 @@ body {
 .product-price {
   font-size: 16px;
   line-height: 19px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .product-link {
@@ -305,6 +300,8 @@ body {
 
 .features {
   height: 341px;
+  background-color: #222222;
+  color: white;
 }
 
 .features-list {
@@ -481,7 +478,7 @@ body {
 .subscribe-btn {
   width: 100px;
   padding: 20px;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   border: none;
   border-top-right-radius: 22px;
   border-bottom-right-radius: 22px;
@@ -538,7 +535,7 @@ body {
 }
 
 .social-link:hover {
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   color: #fff;
 }
 
@@ -560,7 +557,7 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #f16d7f;
   text-transform: uppercase;
   margin: 0;
 }
@@ -601,12 +598,12 @@ body {
 
 .breadcrumbs-link--current {
   font-weight: bold;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .breadcrumbs-link[href]:hover {
   text-decoration: underline;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .filter-box {
@@ -717,7 +714,7 @@ body {
 .head-registration {
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .registration-main {
@@ -780,7 +777,7 @@ body {
 
 .form-button {
   padding: 16px 28px;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   color: #FFFFFF;
   border: none;
 }
