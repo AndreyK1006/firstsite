@@ -32,8 +32,12 @@ body {
     text-align: center;
 }
 
+
+
 // заголовок
 @import "blocks/_header.scss";
+
+
 
 // промо
 .promo {
@@ -83,6 +87,7 @@ body {
 .categories {
     padding-top: 65px;
     padding-bottom: 65px;
+    background-color: #fff;
 }
 
 .categories-list{
@@ -619,4 +624,72 @@ body {
 .registration-perks-li::before {
     content: url(../img/check.png) ;
     margin-right: 23px;
+}
+
+.main-nav {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    top: 78px;
+    width: 232px;
+    box-sizing: border-box;
+    padding: 37px 34px;
+    min-height: 764px;
+    z-index: 100;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.nav-list, .subnav-list {
+   margin: 0;
+   padding: 0; 
+   list-style-type: none;
+}
+
+.nav-wrap {
+    position: relative;
+}
+
+.nav-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.main-nav-close-btn {
+    padding: 3px 3px 0 3px;
+    position: absolute;
+    right: -22px;
+    top: -25px;
+    border: none;
+    background: #ffffff;
+}
+
+.main-nav-close {
+    transform: scale(0);
+}
+
+.nav-item {
+    margin: 20px 0;
+}
+
+.subnav-item {
+    margin: 11px 0 11px 20px;
+}
+
+.nav-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.subnav-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
 }
