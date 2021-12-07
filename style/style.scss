@@ -454,9 +454,12 @@ body {
     gap: 30px;
     margin-top: 51px;
     margin-bottom: 64px;
-    // align-items: center;
+    align-items: center;
 }
-
+.catalog-heading-filter {
+    display: none;
+    
+}
 
 
 .details-filter {
@@ -545,21 +548,13 @@ body {
     position: relative;
 }
 
-
-
-
-
-// .sort {
-//     display: flex;
-//     gap: 20px;
-//     background-color: red;
-// }
-
 .sort-name {    
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    align-items: center;
+    
 }
 
 .catalog-sort-summary {
