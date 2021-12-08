@@ -29,6 +29,7 @@
                         <img src="img/icon-search.png" alt="поиск">
                     </a>
                 </div>
+
                 <nav class="header-right">
                     <button class="menu-button">
                         <img src="img/icon-menu.png" alt="меню">
@@ -40,7 +41,47 @@
                         <img src="img/icon-cart.png" alt="корзина">
                     </a>
                 </nav>
+
+                <nav class="main-nav">
+                    <!-- main-nav-close -->
+                    <div class="nav-wrap">
+                        <button type="button" class="main-nav-close-btn"> <img src="img/closemenu.png"
+                                alt="closemenu"></button>
+                        <p class="nav-title">MENU</p>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="" class="nav-link">MAN</a>
+                                <ul class="subnav-list">
+                                    <li class="subnav-item"><a href="" class="subnav-link">Accessories</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Bags</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Denim</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="" class="nav-link">WOMAN</a>
+                                <ul class="subnav-list">
+                                    <li class="subnav-item"><a href="" class="subnav-link">Accessories</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Jackets & Coats</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Polos</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">T-Shirts</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="" class="nav-link">KIDS</a>
+                                <ul class="subnav-list">
+                                    <li class="subnav-item"><a href="" class="subnav-link">Accessories</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Jackets & Coats</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Polos</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">T-Shirts</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Shirts</a></li>
+                                    <li class="subnav-item"><a href="" class="subnav-link">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
+
+
         </div>
     </header>
 
@@ -66,19 +107,109 @@
     <section class="products">
         <div class="container">
             <section class="filter-box">
-                <div class="filter">
-                    <span class="filter-title">FILTER<img src="img/vector.svg" alt="vector"></span>
-                </div>
-                <div class="sort">
-                    <span class="sort-name">TRENDING NOW</span>
-                    <span class="sort-name">SIZE</span>
-                    <span class="sort-name">PRICE</span>
-                </div>
+                <h2 class="hidden">Фильтр</h2>
+                <details class="details-filter">
+                    <summary class="filter-title">
+                        FILTER
+                        <span class="filter-title-icon"><i class="fas fa-sort-amount-down"></i></span>
+                        <!-- <img class="filter-title-img" src="img/vector.svg"
+                                alt="vector"> -->
+                    </summary>
+
+                    <div class="catalog-filter-norm">
+                        <details class="details-catalog-filter" open>
+                            <summary class="summary-catalog-filter">CATEGORY</summary>
+                            <ul class="catalog-filter-content">
+                                <li><a href="" class="catalog-filter-link">Accessiories</a></li>
+                                <li><a href="" class="catalog-filter-link">Bags</a></li>
+                                <li><a href="" class="catalog-filter-link">Denim</a></li>
+                                <li><a href="" class="catalog-filter-link">Hoodies & Sweatshirts</a></li>
+                                <li><a href="" class="catalog-filter-link">Jackets & Coats</a></li>
+                                <li><a href="" class="catalog-filter-link">Polos</a></li>
+                                <li><a href="" class="catalog-filter-link">Shirts</a></li>
+                                <li><a href="" class="catalog-filter-link">Shoes</a></li>
+                                <li><a href="" class="catalog-filter-link">Sweaters & Knits</a></li>
+                                <li><a href="" class="catalog-filter-link">T-Shirts</a></li>
+                                <li><a href="" class="catalog-filter-link">Tanks</a></li>
+                            </ul>
+                        </details>
+
+                        <details class="details-catalog-filter">
+                            <summary class="summary-catalog-filter">BRAND</summary>
+                            <div class="catalog-filter-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima totam eveniet
+                                    labore
+                                    accusamus veritatis harum debitis, magni dicta. Non iure eligendi alias earum
+                                    suscipit
+                                    asperiores voluptatum perferendis possimus, at atque?</p>
+                            </div>
+                        </details>
+
+                        <details class="details-catalog-filter">
+                            <summary class="summary-catalog-filter">DESIGNER</summary>
+                            <div class="catalog-filter-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima totam eveniet
+                                    labore
+                                    accusamus veritatis harum debitis, magni dicta. Non iure eligendi alias earum
+                                    suscipit
+                                    asperiores voluptatum perferendis possimus, at atque?</p>
+                            </div>
+                        </details>
+                    </div>
+
+                </details>
+
+
+                <details class="sort-name">
+                    <summary class="catalog-sort-summary">TRENDING NOW <img src="img/arrow.png" alt="arrow">
+                    </summary>
+                    <ul class="catalog-size-list">
+                    </ul>
+                </details>
+
+                <details class="sort-name">
+                    <summary class="catalog-sort-summary">SIZE <img src="img/arrow.png" alt="arrow">
+                    </summary>
+                    <ul class="catalog-size-list">
+                        <li>
+                            <label class="catalog-sort-label">
+                                <input type="checkbox" class="catalog-sort-label-input">
+                                <span class="catalog-sort-text">XS</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="catalog-sort-label">
+                                <input type="checkbox" class="catalog-sort-label-input">
+                                <span class="catalog-sort-text">S</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="catalog-sort-label">
+                                <input type="checkbox" class="catalog-sort-label-input">
+                                <span class="catalog-sort-text">M</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="catalog-sort-label">
+                                <input type="checkbox" class="catalog-sort-label-input">
+                                <span class="catalog-sort-text">L</span>
+                            </label>
+                        </li>
+                    </ul>
+                </details>
+
+                <details class="sort-name">
+                    <summary class="catalog-sort-summary">PRICE <img src="img/arrow.png" alt="arrow"></summary>
+                    <ul class="catalog-size-list">
+                    </ul>
+                </details>
+
+                <!-- </div> -->
             </section>
 
             <ul class="products-list">
                 <li class="product">
-                    <img src="img/product-1.jpg" alt="product-1" class="product-img">
+                    <img src="img/product-1p.jpg" alt="product-1p" class="product-img">
                     <div class="product-text">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
@@ -87,7 +218,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="img/product-2.jpg" alt="product-2" class="product-img">
+                    <img src="img/product-2p.jpg" alt="product-2p" class="product-img">
                     <div class="product-text">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
@@ -96,7 +227,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="img/product-3.jpg" alt="product-3" class="product-img">
+                    <img src="img/product-3p.jpg" alt="product-3p" class="product-img">
                     <div class="product-text">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
@@ -105,7 +236,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="img/product-4.jpg" alt="product-4" class="product-img">
+                    <img src="img/product-4p.jpg" alt="product-4p" class="product-img">
                     <div class="product-text">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
@@ -114,7 +245,7 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="img/product-5.jpg" alt="product-5" class="product-img">
+                    <img src="img/product-5p.jpg" alt="product-5p" class="product-img">
                     <div class="product-text">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
@@ -123,7 +254,34 @@
                     </div>
                 </li>
                 <li class="product">
-                    <img src="img/product-6.jpg" alt="product-6" class="product-img">
+                    <img src="img/product-6p.jpg" alt="product-6p" class="product-img">
+                    <div class="product-text">
+                        <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                        <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="img/product-7p.jpg" alt="product-7p" class="product-img">
+                    <div class="product-text">
+                        <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                        <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="img/product-8p.jpg" alt="product-8p" class="product-img">
+                    <div class="product-text">
+                        <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
+                        <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="product-price">$52.00</p>
+                    </div>
+                </li>
+                <li class="product">
+                    <img src="img/product-9p.jpg" alt="product-9p" class="product-img">
                     <div class="product-text">
                         <h3 class="product-name">ELLERY X M'O CAPSULE</h3>
                         <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian

@@ -4,7 +4,20 @@
     box-sizing: border-box;  
 }
 
-$main-color: #F16D7F;
+$main-color: #F16D7F + 1 - 1;
+
+@mixin changecolor {
+    transition-property: background-color, color;
+    transition-duration: 1s;
+}
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+  }
 
 body {
     font-family: 'Lato', sans-serif;
@@ -27,45 +40,14 @@ body {
     text-align: center;
 }
 
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-}
 
-.header {
-    background: #222222;
-    color: white;
-    padding-top: 18px;
-    padding-bottom: 18px;
 
-    &-left {
-        display: flex;
-        align-items: center;
-        }
+// заголовок
+@import "blocks/_header.scss";
 
-    &-right {
-        display: flex;
-        align-items: center;
-        }
-    }
 
-.logo-link {
-    margin-right: 40px;
-}
 
-.cart-link {
-    margin-left: 30px;
-}
-
-.menu-button {
-    background-color: transparent;
-    border: none;
-}
-
-.registry-link {
-    margin-left: 30px;
-}
-
+// промо
 .promo {
     position: relative;
     background: #F1E4E6;
@@ -109,9 +91,11 @@ body {
     margin-left: -228px;
 }
 
+// категории
 .categories {
     padding-top: 65px;
     padding-bottom: 65px;
+    background-color: #fff;
 }
 
 .categories-list{
@@ -172,15 +156,11 @@ body {
     flex-direction: column;
 }
 
-.features {
-    background-color: #222222;
-    color: white;
-}
-
 .feedback {
     background-color: #eee;
 }
 
+// товары
 .products {
     padding-top: 20px;
     padding-bottom: 95px;
@@ -251,10 +231,19 @@ body {
     border: 1px solid #F26376;
     padding: 14px 39px;
     display: inline-block;
+    @include changecolor;
 }
 
+.product-link:hover {
+    background-color: purple;
+    transform: scale(2) translateY(-15px);
+}
+
+// приемущества
 .features {
     height: 341px;
+    background-color: #222222;
+    color: white;
 }
 
 .features-list {
@@ -287,27 +276,25 @@ body {
     color: #FBFBFB;
 }
 
-
+// подписка на рассылку
 .feedback {
     background-color: #eee;
     background-image: url("../img/subscribe-bg.jpg");
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 155px;
-}
 
-.feedback-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.feedback-left {
-    text-align: center;
-}
-
-.feedback-face {
-    margin-top: 97px;
-    margin-bottom: 30px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left {
+        text-align: center;
+    }
+    &-face {
+        margin-top: 97px;
+        margin-bottom: 30px;
+    }
 }
 
 .feedback-left-text{
@@ -382,50 +369,16 @@ body {
 	border-top-right-radius: 22px;
 	border-bottom-right-radius: 22px;
 	color: #fff;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+    }
 }
 
-.footer {
-    background-color: #222;
-    color: #fff;
-    height: 79px;    
-}
 
-.footer-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-links {
-    list-style: none;
-    display: flex;
-    gap: 8px;
-    margin-top: 22px;
-}
-
-.copyright {
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-    margin-top: 32px;
-}
-
-.social-link {
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
-
-.social-link:hover {
-    background-color: $main-color;
-    color: #fff;
-
-}
+// подвал
+@import "blocks/_footer.scss";
 
 .inner-title {
     padding: 60px 0;
@@ -456,6 +409,15 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+}
+
+.breadcrumbs-item {
+    content: '/';
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+    }
 }
 
 .breadcrumbs-item::before {
@@ -492,41 +454,146 @@ body {
     gap: 30px;
     margin-top: 51px;
     margin-bottom: 64px;
+    align-items: center;
+}
+.catalog-heading-filter {
+    display: none;
+    
 }
 
-.filter {
-    width: 360px;    
+
+.details-filter {
+    position: relative;
+    width: 360px;
+    // margin-right: 20px;
+    
 }
 
 .filter-title {
-    display: flex;
+    display: block;
     gap: 12px;
+    width: 360px; 
     font-family: Lato;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    margin-left: 15px;    
+    margin-left: 15px;  
+    padding: 16px 0;
+    cursor: pointer;
+    
 }
 
-.sort {
-    display: flex;
-    gap: 20px;
+.filter-title-icon {
+    margin-left: 10px;
 }
 
-.sort-name {
-    display: flex;
+.details-filter[open] .filter-title  {
+    color: #EF5B70;
+}
+
+.details-filter[open] .filter-title-icon {
+    fill: #EF5B70;
+}
+
+.details-catalog-filter {
+    width: 365px;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 200;
+    padding: 9px;
+}
+
+.summary-catalog-filter {
+    // position: absolute;
+    display: block;
+    cursor: pointer;
+    margin-left: 17px;
+    padding: 12px;
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+
+}
+.catalog-filter-norm {
+    position: absolute;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.catalog-filter-content {
+    width: 100%;
+    padding: 0 19px;
+    list-style: none;
+}
+
+.catalog-filter-link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin: 13px;
+}
+
+.catalog-size-details {
+    position: absolute;
+}
+
+.catalog-size-list{
+    position: relative;
+}
+
+.sort-name {    
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    gap: 10px;
+    align-items: center;
+    
 }
 
-.sort-name::after {
-    content: url(../img/arrow.png) ;
+.catalog-sort-summary {
+    display: block;
+    margin-right: 10px;
+    position: relative;
 }
+
+.catalog-size-list {
+    position: absolute;
+    list-style: none;
+    padding: 8px;
+    width: 79px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background-color: #fff;
+}
+
+.catalog-sort-label {
+    display: flex;
+    align-items: center;
+    margin: 9px 6px;
+    
+}
+
+
+.catalog-sort-label-input {
+    display: block;
+    margin-right: 5px;
+    opacity: 0.2;
+}
+
+.catalog-sort-text {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+// .sort-name::after {
+//     content: url(../img/arrow.png) ;
+// }
 
 .pagination {
 	display: flex;
@@ -561,8 +628,114 @@ body {
     text-decoration: none;
     border: none;
     background-color: #FFFFFF;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+        color: #fff;
+    }
 }
 
 .pagination-link--active {
 	color: #EF5B70;
 }
+
+.registration {
+    height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.head-registration {    
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+}
+
+.registration-main {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.mainform-registration {
+    display: flex;
+    flex-direction: column;
+    display: block;  
+    // height: 360px;
+}
+
+.registration-perks {
+    margin-left: 128px;
+    
+}
+
+.yourname{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.reg-name{
+    width: 360px;
+    padding: 11px 18px;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.registration-gender{
+    display: flex;
+    margin: 31px 0;
+    gap: 20px;    
+}
+
+.block-gender {
+    display: block;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.registration-form-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: 15px 0 39px 0;
+}
+
+.form-button {
+    padding: 16px 28px;
+    background-color: $main-color;
+    color: #FFFFFF;
+    border: none;
+    @include changecolor;
+
+    &:hover {
+        background-color: purple;
+    }    
+}
+
+.registration-perks-font {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 28px;
+    list-style: none;
+    content: 'V'; 
+}
+
+
+.registration-perks-li::before {
+    content: url(../img/check.png) ;
+    margin-right: 23px;
+}
+
